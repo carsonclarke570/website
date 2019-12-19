@@ -1,202 +1,23 @@
 import React from 'react';
 
+import Navbar from './components/Navbar';
+import Profile from './components/Profile';
+import Sidebar from './components/Sidebar';
+
 function App() {
   return (
     <div>
-      
-      {/* <!-- .mobile-nav --> */}
-      
-      <div class="sidebar sidebar-fixed">
-          <button class="btn-sidebar btn-sidebar-close"><i class="rsicon rsicon-close"></i></button>
-      
-          <div class="widget-area">
-              <aside class="widget widget-profile">
-                  <div class="profile-photo">
-                      <img src="img/uploads/rs-photo-v2.jpg" alt="Robert Smith"/>
-                  </div>
-                  <div class="profile-info">
-                      <h2 class="profile-title">Carson Clarke-Magrab</h2>
-      
-                      <h3 class="profile-position">Software Engineer</h3>
-                  </div>
-              </aside>
-              {/* <!-- .widget-profile --> */}
-      
-              <aside class="widget widget_contact">
-                  <h2 class="widget-title">Contact Me</h2>
-      
-                  <form class="rsForm" action="php/mailsender.php" method="post">
-                      <div class="input-field">
-                          <label>Name</label>
-                          <input type="text" name="rsName" value=""/>
-                          <span class="line"></span>
-                      </div>
-      
-                      <div class="input-field">
-                          <label>Email</label>
-                          <input type="email" name="rsEmail" value=""/>
-                          <span class="line"></span>
-                      </div>
-      
-                      <div class="input-field">
-                          <label>Subject</label>
-                          <input type="text" name="rsSubject" value=""/>
-                          <span class="line"></span>
-                      </div>
-      
-                      <div class="input-field">
-                          <label>Message</label>
-                          <textarea rows="4" name="rsMessage"></textarea>
-                          <span class="line"></span>
-                      </div>
+        <Sidebar />
+        <div class="wrapper">
+            <header class="header">
+                <div class="head-bg" style={{"background-image": "url('img/uploads/rs-cover.jpg')"}}></div>
+                <Navbar />
+            </header>
+            {/* <!-- .header --> */}
             
-                      <div class="check-field">
-                        <input type="checkbox" name="rsPivacyPolicy" id="rsPivacyPolicyWidget"/>
-                        <label for="rsPivacyPolicy">I have read the Privacy Policy note.</label>
-                      </div>
-      
-                      <span class="btn-outer btn-primary-outer ripple">
-                          <input class="rsFormSubmit btn btn-lg btn-primary" type="submit" value="Send"/>
-                      </span>
-                  </form>
-              </aside>
-              {/* <!-- .widget_contact --> */}
-          </div>
-          {/* <!-- .widget-area --> */}
-      </div>
-      {/* <!-- .sidebar --> */}
-
-      <div class="wrapper">
-          <header class="header">
-              <div class="head-bg" style={{"background-image": "url('img/uploads/rs-cover.jpg')"}}></div>
-          
-              <div class="head-bar">
-                  <div class="head-bar-inner">
-                      <div class="row">
-                          <div class="col-sm-3 col-xs-6">
-                              <a class="logo" href="index.html"><span>RS</span>card</a>
-                              {/* <!-- <a class="head-logo" href=""><img src="img/rs-logo.png" alt="RScard"/></a> --> */}
-                          </div>
-          
-                          <div class="col-sm-9 col-xs-6">
-                              <div class="nav-wrap">
-                                  <nav id="nav" class="nav">
-                                      <ul class="clearfix">
-                                          <li><a href="#about">About</a></li>
-                                          <li><a href="#skills">Skills</a></li>
-                                          <li><a href="#portfolio">Projects</a></li>
-                                          <li><a href="#experience">Experience</a></li>
-                                          {/* <li><a href="#references">References</a></li>
-                                          <li>
-                                              <a href="category.html">Blog</a>
-                                              <ul>
-                                                  <li><a href="single-image.html">Image Post</a></li>
-                                                  <li><a href="single-slider.html">Slider Post</a></li>
-                                                  <li><a href="single-video.html">Video Post</a></li>
-                                                  <li><a href="single-audio.html">Audio Post</a></li>
-                                                  <li><a href="single-vimeo.html">Vimeo Post</a></li>
-                                                  <li><a href="single-youtube.html">Youtube Post</a></li>
-                                                  <li><a href="single-dailymotion.html">Dailymotion Post</a></li>
-                                                  <li><a href="single.html">Without Media Post</a></li>
-                                                  <li><a href="typography.html">Typography Page</a></li>
-                                                  <li><a href="404.html">404 Page</a></li>
-                                              </ul>
-                                          </li> */}
-                                          <li><a href="#calendar">Calendar <span></span></a></li>
-                                          <li><a href="#contact">Contact <span></span></a></li>
-                                      </ul>
-                                  </nav>
-          
-                                  <button class="btn-mobile btn-mobile-nav">Menu</button>
-                                  <button class="btn-sidebar btn-sidebar-open"><i class="rsicon rsicon-menu"></i></button>
-                              </div>
-                              {/* <!-- .nav-wrap --> */}
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </header>
-          {/* <!-- .header --> */}
-          
-          <div class="content">
-              <div class="container">
-      
-              {/* <!-- START: PAGE CONTENT --> */}
-              <section id="about" class="section section-about">
-                  <div class="animate-up">
-                      <div class="section-box">
-                          <div class="profile">
-                              <div class="row">
-                                  <div class="col-xs-5">
-                                      <div class="profile-photo"><img src="img/uploads/rs-photo-v1.jpg" alt="Robert Smith"/></div>
-                                  </div>
-                                  <div class="col-xs-7">
-                                      <div class="profile-info">
-                                          <div class="profile-preword"><span>Hello</span></div>
-                                          <h1 class="profile-title"><span>I'm</span> Carson Clarke-Magrab</h1>
-              
-                                          <h2 class="profile-position">Software Engineer</h2></div>
-                                      <ul class="profile-list">
-                                          <li class="clearfix">
-                                              <strong class="title">Education</strong>
-                                              <span class="cont">Rochester Institute of Technology</span>
-                                          </li>
-                                          <li class="clearfix">
-                                              <strong class="title">Major</strong>
-                                              <span class="cont">Computer Engineering / Computer Science</span>
-                                          </li>
-                                          <li class="clearfix">
-                                              <strong class="title">E-mail</strong>
-                                              <span class="cont"><a href="mailto:ctc7359@rit.edu">ctc7359@rit.edu</a></span>
-                                          </li>
-                                          <li class="clearfix">
-                                              <strong class="title">Phone</strong>
-                                              <span class="cont"><a href="tel:+12562548456">(908)-403-1635</a></span>
-                                          </li>
-                                          <li class="clearfix">
-                                              <strong class="title">Available</strong>
-                                              <span class="cont">May 2020</span>
-                                          </li>
-                                          {/* <li class="clearfix">
-                                              <strong class="title"><span class="button">On Vacation</span></strong>
-                                              <span class="cont"><i class="rsicon rsicon-calendar"></i>till March 25, 2016</span>
-                                          </li> */}
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="profile-social">
-                              <ul class="social">
-                                  <li><a class="ripple-centered" href="https://github.com/carsonclarke570" target="_blank"><i
-                                          class="rsicon rsicon-github"></i></a></li>
-                                  <li><a class="ripple-centered" href="https://www.linkedin.com/in/carsonclarke/" target="_blank"><i
-                                          class="rsicon rsicon-linkedin"></i></a></li>
-                                  <li><a class="ripple-centered" href="https://www.facebook.com/carson.clarkemagrab.7" target="_blank"><i
-                                          class="rsicon rsicon-facebook"></i></a></li>
-                                  {/* <li><a class="ripple-centered" href="https://plus.google.com" target="_blank"><i
-                                          class="rsicon rsicon-google-plus"></i></a></li>
-                                  <li><a class="ripple-centered" href="https://dribbble.com" target="_blank"><i
-                                          class="rsicon rsicon-dribbble"></i></a></li>
-                                  <li><a class="ripple-centered" href="https://www.instagram.com" target="_blank"><i
-                                          class="rsicon rsicon-instagram"></i></a></li> */}
-                              </ul>
-                          </div>
-                      </div>
-              
-                      <div class="section-txt-btn">
-                          <p><a class="btn btn-lg btn-border ripple" target="_blank"
-                                href="http://dev.novembit.com/rs_card/wp-content/uploads/2015/11/test-1.pdf">Download Resume</a></p>
-              
-                          <p>
-                              Hello! I'm Carson Clarke-Magrab. I'm a fifth-year Computer Engineering and Computer Science student at the 
-                              Rochester Institute of Technology. Experienced with software development processes. Specialized in web development
-                              and graphics programming. Well-versed in numerous programming languages including C/C++, Python, Golang and Java.
-                              Comfortable with Javascript and SQL.
-                          </p>
-                      </div>
-                  </div>
-              </section>
-              {/* <!-- #about --> */}
+            <div class="content">
+                <div class="container">
+                    <Profile/>
               
               <section id="skills" class="section section-skills">
                   <div class="animate-up">
