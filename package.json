@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "0.1.0",
-  "homepage": "https://carsonclarke570.github.io",
+  "homepage": "https://cclarke-magrab.me",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.1.1",
