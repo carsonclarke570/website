@@ -40,8 +40,8 @@ class Navbar extends React.Component {
                                     </ul>
                                 </nav>
         
-                                <button class="btn-mobile btn-mobile-nav">Menu</button>
-                                <button class="btn-sidebar btn-sidebar-open"><i class="rsicon rsicon-menu"></i></button>
+                                {/* <button class="btn-mobile btn-mobile-nav">Menu</button>
+                                <button class="btn-sidebar btn-sidebar-open"><i class="rsicon rsicon-menu"></i></button> */}
                             </div>
                         </div>
                     </div>

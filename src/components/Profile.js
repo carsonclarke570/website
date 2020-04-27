@@ -19,7 +19,8 @@ class Profile extends React.Component {
                                         <div class="profile-preword"><span>Hello</span></div>
                                         <h1 class="profile-title"><span>I'm</span> Carson Clarke-Magrab</h1>
             
-                                        <h2 class="profile-position">Software Engineer</h2></div>
+                                        <h2 class="profile-position">Software Engineer</h2>
+                                    </div>
                                     <ul class="profile-list">
                                         <li class="clearfix">
                                             <strong class="title">Education</strong>
@@ -38,13 +39,9 @@ class Profile extends React.Component {
                                             <span class="cont"><a href="tel:+12562548456">(908)-403-1635</a></span>
                                         </li>
                                         <li class="clearfix">
-                                            <strong class="title">Available</strong>
-                                            <span class="cont">May 2020</span>
-                                        </li>
-                                        {/* <li class="clearfix">
-                                            <strong class="title"><span class="button">On Vacation</span></strong>
-                                            <span class="cont"><i class="rsicon rsicon-calendar"></i>till March 25, 2016</span>
-                                        </li> */}
+                                            <strong class="title"><span class="button">Available</span></strong>
+                                            <span class="cont"><i class="rsicon rsicon-calendar"></i>January, 2020</span>
+                                        </li> 
                                     </ul>
                                 </div>
                             </div>
@@ -71,10 +68,16 @@ class Profile extends React.Component {
                         <p><a class="btn btn-lg btn-border ripple" href={pdf}>Download Resume</a></p>
             
                         <p>
+                            <b>Always Moving Forward.</b>
+                        </p>
+                        <p>
                             Hello! I'm Carson Clarke-Magrab. I'm a fifth-year Computer Engineering and Computer Science student at the 
-                            Rochester Institute of Technology. Experienced with software development processes. Specialized in web development
+                            Rochester Institute of Technology. Graduating in December 2020 and currently available to work in January 2021.  
+                        </p>
+                        <p>
+                            Specialized in web development, embedded development
                             and graphics programming. Well-versed in numerous programming languages including C/C++, Python, Golang and Java.
-                            Comfortable with Javascript and SQL.
+                            Comfortable with OpenGL, as well as Javascript and SQL.
                         </p>
                     </div>
                 </div>

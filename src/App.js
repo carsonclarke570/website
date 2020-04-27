@@ -2,7 +2,9 @@ import React from 'react';
 
 import Navbar from './components/Navbar';
 import Profile from './components/Profile';
+import Projects from './components/Projects';
 import Sidebar from './components/Sidebar';
+import Skills from './components/Skills';
 
 function App() {
   return (
@@ -17,316 +19,9 @@ function App() {
             
             <div class="content">
                 <div class="container">
-                    <Profile/>
-              
-              <section id="skills" class="section section-skills">
-                  <div class="animate-up">
-                      <h2 class="section-title">Skills</h2>
-              
-                      <div class="section-box">
-                          <div class="row">
-                              <div class="col-sm-6">
-                                  <div class="progress-bar">
-                                      <div class="bar-data">
-                                          <span class="bar-title">C/C++</span>
-                                          <span class="bar-value">Proficient</span>
-                                      </div>
-                                      <div class="bar-line">
-                                          <span class="bar-fill" data-width="90%"></span>
-                                      </div>
-                                  </div>
-                              </div>
-
-                              <div class="col-sm-6">
-                                  <div class="progress-bar">
-                                      <div class="bar-data">
-                                          <span class="bar-title">Golang</span>
-                                          <span class="bar-value">Proficient</span>
-                                      </div>
-                                      <div class="bar-line">
-                                          <span class="bar-fill" data-width="90%"></span>
-                                      </div>
-                                  </div>
-                              </div>
-
-                              <div class="col-sm-6">
-                                  <div class="progress-bar">
-                                      <div class="bar-data">
-                                          <span class="bar-title">Java</span>
-                                          <span class="bar-value">Proficient</span>
-                                      </div>
-                                      <div class="bar-line">
-                                          <span class="bar-fill" data-width="90%"></span>
-                                      </div>
-                                  </div>
-                              </div>
-
-                              <div class="col-sm-6">
-                                  <div class="progress-bar">
-                                      <div class="bar-data">
-                                          <span class="bar-title">Python</span>
-                                          <span class="bar-value">Comfortable</span>
-                                      </div>
-                                      <div class="bar-line">
-                                          <span class="bar-fill" data-width="60%"></span>
-                                      </div>
-                                  </div>
-                              </div>
-
-                              <div class="col-sm-6">
-                                  <div class="progress-bar">
-                                      <div class="bar-data">
-                                          <span class="bar-title">HTML</span>
-                                          <span class="bar-value">Comfortable</span>
-                                      </div>
-                                      <div class="bar-line">
-                                          <span class="bar-fill" data-width="60%"></span>
-                                      </div>
-                                  </div>
-                              </div>
-
-                              <div class="col-sm-6">
-                                  <div class="progress-bar">
-                                      <div class="bar-data">
-                                          <span class="bar-title">CSS</span>
-                                          <span class="bar-value">Familiar</span>
-                                      </div>
-                                      <div class="bar-line">
-                                          <span class="bar-fill" data-width="30%"></span>
-                                      </div>
-                                  </div>
-                              </div>
-
-                              <div class="col-sm-6">
-                                  <div class="progress-bar">
-                                      <div class="bar-data">
-                                          <span class="bar-title">Javascript</span>
-                                          <span class="bar-value">Familiar</span>
-                                      </div>
-                                      <div class="bar-line">
-                                          <span class="bar-fill" data-width="30%"></span>
-                                      </div>
-                                  </div>
-                              </div>
-
-                              <div class="col-sm-6">
-                                  <div class="progress-bar">
-                                      <div class="bar-data">
-                                          <span class="bar-title">SQL</span>
-                                          <span class="bar-value">Familiar</span>
-                                      </div>
-                                      <div class="bar-line">
-                                          <span class="bar-fill" data-width="30%"></span>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </section>
-              {/* <!-- #skills --> */}
-              
-              <section id="portfolio" class="section section-portfolio">
-              <div class="animate-up">
-              <h2 class="section-title">Projects</h2>
-              
-              <div class="grid">
-                  <div class="grid-sizer"></div>
-              
-                  <div class="grid-item size22 photography">
-                      <div class="grid-box">
-                          <figure class="portfolio-figure">
-                              <img src="img/uploads/portfolio/portfolio-thumb-05-610x600.jpg" alt=""/>
-                              <figcaption class="portfolio-caption">
-                                  <div class="portfolio-caption-inner">
-                                      <h3 class="portfolio-title">Lair</h3>
-                                      <h4 class="portfolio-cat">Personal Project</h4>
-              
-                                      <div class="btn-group">
-                                          <a class="btn-link" href="http://bit.ly/1YtB8he" target="_blank"><i
-                                                  class="rsicon rsicon-link"></i></a>
-                                          <a class="portfolioFancybox btn-zoom" data-fancybox-group="portfolioFancybox1"
-                                            href="#portfolio1-inline1"><i class="rsicon rsicon-eye"></i></a>
-                                          <a class="portfolioFancybox hidden" data-fancybox-group="portfolioFancybox1"
-                                            href="#portfolio1-inline2"></a>
-                                          <a class="portfolioFancybox hidden" data-fancybox-group="portfolioFancybox1"
-                                            href="#portfolio1-inline3"></a>
-                                      </div>
-                                  </div>
-                              </figcaption>
-                          </figure>
-              
-                          {/* <!-- Start: Portfolio Inline Boxes --> */}
-                          <div id="portfolio1-inline1" class="fancybox-inline-box">
-                              <div class="inline-embed" data-embed-type="image"
-                                  data-embed-url="img/uploads/portfolio/portfolio-thumb-05-large.jpg"></div>
-                              <div class="inline-cont">
-                                  <h2 class="inline-title">Street photography is photography that features the chance
-                                      encounters and random accidents within public places.</h2>
-              
-                                  <div class="inline-text">
-                                      <p>Street photography does not necessitate the presence of a street or even the urban
-                                          environment. Though people usually feature directly, street photography might be
-                                          absent of people and can be an object or environment where the image projects a
-                                          decidedly human character in facsimile or aesthetic.</p>
-                                  </div>
-                              </div>
-                          </div>
-              
-                          <div id="portfolio1-inline2" class="fancybox-inline-box">
-                              <div class="inline-embed" data-embed-type="image"
-                                  data-embed-url="img/uploads/portfolio/portfolio-thumb-01-large.jpg"></div>
-                              <div class="inline-cont">
-                                  <div class="inline-text">
-                                      <h2 class="inline-title">Framing and timing</h2>
-              
-                                      <p>Framing and timing can be key aspects of the craft with the aim of some street
-                                          photography being to create images at a decisive or poignant moment. Street
-                                          photography can focus on emotions displayed, thereby also recording people's history
-                                          from an emotional point of view.</p>
-                                  </div>
-                              </div>
-                          </div>
-              
-                          <div id="portfolio1-inline3" class="fancybox-inline-box">
-                              <div class="inline-embed" data-embed-type="iframe"
-                                  data-embed-url="https://player.vimeo.com/video/118244244"></div>
-                              <div class="inline-cont">
-                                  <div class="inline-text">
-                                      <h2 class="inline-title">A Look Into Documenting Street Fashion Photography</h2>
-              
-                                      <p>HB Nam is an internationally known street fashion photographer. In this Leica Camera
-                                          Portrait, Nam explains how he started in photography and what photography means to
-                                          him. For Nam, it's about documenting what's around him and the concentration
-                                          required to achieve a good shot.</p>
-                                  </div>
-                              </div>
-                          </div>
-                          {/* <!-- End: Portfolio Inline Boxes --> */}
-                      </div>
-                  </div>
-                  {/* <!-- .grid-item --> */}
-              
-                  <div class="grid-item size11 bridge">
-                      <div class="grid-box">
-                          <figure class="portfolio-figure">
-                              <img src="img/uploads/portfolio/portfolio-thumb-11-289x281.jpg" alt=""/>
-                              <figcaption class="portfolio-caption">
-                                  <div class="portfolio-caption-inner">
-                                      <h3 class="portfolio-title">Suspension Bridge</h3>
-                                      <h4 class="portfolio-cat">Bridge</h4>
-              
-                                      <div class="btn-group">
-                                          <a class="btn-link" href="http://bit.ly/1YtB8he" target="_blank"><i
-                                                  class="rsicon rsicon-link"></i></a>
-                                          <a class="portfolioFancybox btn-zoom" data-fancybox-group="portfolioFancybox2"
-                                            href="#portfolio2-inline1"><i class="rsicon rsicon-eye"></i></a>
-                                      </div>
-                                  </div>
-                              </figcaption>
-                          </figure>
-              
-                          {/* <!-- Start: Portfolio Inline Boxes --> */}
-                          <div id="portfolio2-inline1" class="fancybox-inline-box">
-                              <div class="inline-cont">
-                                  <h2 class="inline-title">Suspension Bridges - Design Technology</h2>
-              
-                                  <div class="inline-text">
-                                      <p>Suspension bridges in their simplest form were originally made from rope and wood.
-                                          Modern suspension bridges use a box section roadway supported by high tensile
-                                          strength cables.
-                                          In the early nineteenth century, suspension bridges used iron chains for cables. The
-                                          high tensile cables used in most modern suspension
-                                          bridges were introduced in the late nineteenth century.<br/>
-                                          Today, the cables are made of thousands of individual steel wires bound tightly
-                                          together. Steel, which is very strong under tension, is
-                                          an ideal material for cables; a single steel wire, only 0.1 inch thick, can support
-                                          over half a ton without breaking.</p>
-              
-                                      <p>Light, and strong, suspension bridges can span distances from 2,000 to 7,000 feet far
-                                          longer than any other kind of bridge. They are
-                                          ideal for covering busy waterways.</p>
-              
-                                      <p>With any bridge project the choice of materials and form usually comes down to cost.
-                                          Suspension bridges tend to be the most expensive to build. A suspension bridge
-                                          suspends the roadway from huge main cables, which extend
-                                          from one end of the bridge to the other. These cables rest on top of high towers and
-                                          have to be securely anchored into the bank at either
-                                          end of the bridge. The towers enable the main cables to be draped over long
-                                          distances. Most of the weight or load of the bridge is
-                                          transferred by the cables to the anchorage systems. These are imbedded in either
-                                          solid rock or huge concrete blocks. Inside the anchorages,
-                                          the cables are spread over a large area to evenly distribute the load and to prevent
-                                          the cables from breaking free.</p>
-              
-                                      <p>The Arthashastra of Kautilya mentions the construction of dams and bridges.A Mauryan
-                                          bridge near Girnar was surveyed by James Princep.
-                                          The bridge was swept away during a flood, and later repaired by Puspagupta, the
-                                          chief architect of emperor Chandragupta I. The bridge
-                                          also fell under the care of the Yavana Tushaspa, and the Satrap Rudra Daman. The use
-                                          of stronger bridges using plaited bamboo and iron
-                                          chain was visible in India by about the 4th century. A number of bridges, both for
-                                          military and commercial purposes, were constructed by
-                                          the Mughal administration in India.</p>
-                                  </div>
-                              </div>
-                          </div>
-                          {/* <!-- End: Portfolio Inline Boxes --> */}
-                      </div>
-                  </div>
-                  {/* <!-- .grid-item -->
-              */}
-                  <div class="grid-item size11 nature photography">
-                      <div class="grid-box">
-                          <figure class="portfolio-figure">
-                              <img src="img/uploads/portfolio/portfolio-thumb-08-289x281.jpg" alt=""/>
-                              <figcaption class="portfolio-caption">
-                                  <div class="portfolio-caption-inner">
-                                      <h3 class="portfolio-title">Rocky Mountains</h3>
-                                      <h4 class="portfolio-cat">Nature, Photography</h4>
-              
-                                      <div class="btn-group">
-                                          <a class="btn-link" href="http://bit.ly/1YtB8he" target="_blank"><i
-                                                  class="rsicon rsicon-link"></i></a>
-                                          <a class="portfolioFancybox btn-zoom" data-fancybox-group="portfolioFancybox3"
-                                            href="#portfolio3-inline1"><i class="rsicon rsicon-eye"></i></a>
-                                          <a class="portfolioFancybox hidden" data-fancybox-group="portfolioFancybox3"
-                                            href="#portfolio3-inline2"></a>
-                                          <a class="portfolioFancybox hidden" data-fancybox-group="portfolioFancybox3"
-                                            href="#portfolio3-inline3"></a>
-                                      </div>
-                                  </div>
-                              </figcaption>
-                          </figure>
-              
-                          {/* <!-- Start: Portfolio Inline Boxes --> */}
-                          <div id="portfolio3-inline1" class="fancybox-inline-box">
-                              <div class="inline-embed" data-embed-type="image"
-                                  data-embed-url="img/uploads/portfolio/portfolio-thumb-08-large.jpg"></div>
-                          </div>
-              
-                          <div id="portfolio3-inline2" class="fancybox-inline-box">
-                              <div class="inline-embed" data-embed-type="image"
-                                  data-embed-url="img/uploads/portfolio/portfolio-thumb-04-large.jpg"></div>
-                          </div>
-              
-                          <div id="portfolio3-inline3" class="fancybox-inline-box">
-                              <div class="inline-embed" data-embed-type="image"
-                                  data-embed-url="img/uploads/portfolio/portfolio-thumb-02-large.jpg"></div>
-                          </div>
-                          {/* <!-- End: Portfolio Inline Boxes --> */}
-                      </div>
-                  </div>
-                  {/* <!-- .grid-item --> */}
-              </div>
-              
-              <div class="grid-more">
-                  <span class="ajax-loader"></span>
-                  <button class="btn btn-border ripple"><i class="rsicon rsicon-add"></i></button>
-              </div>
-              </div>
-              </section>
-              {/* <!-- #portfolio --> */}
+                    <Profile />
+                    <Skills />
+                    <Projects />
               
               <section id="experience" class="section section-experience">
                   <div class="animate-up">
@@ -335,18 +30,54 @@ function App() {
                       <div class="timeline">
                           <div class="timeline-bar"></div>
                           <div class="timeline-inner clearfix">
+                                <div class="timeline-box timeline-box-left">
+                                  <span class="dot"></span>
+              
+                                  <div class="timeline-box-inner animate-right">
+                                      <span class="arrow"></span>
+              
+                                      <div class="date">06/2020 - Present</div>
+                                      <h3>AMAZON</h3>
+                                      <h4>Software Development Engineer Intern</h4>
+              
+                                      <p>
+                                          Beginning work on 06/01/2020.
+                                      </p>
+                                  </div>
+                              </div>
+
+                              <div class="timeline-box timeline-box-right">
+                                  <span class="dot"></span>
+              
+                                  <div class="timeline-box-inner animate-left">
+                                      <span class="arrow"></span>
+              
+                                      <div class="date">01/2020 - 05/2020</div>
+                                      <h3>ROCHESTER INSITUTE OF TECHNOLOGY</h3>
+                                      <h4>Teaching Assistant</h4>
+              
+                                      <p>
+                                        Responsible for faciliatating laboratory experiments for Interface 
+                                        and Digital Electronics, an upper-level embedded systems course. 
+                                        Reorganized the laboratory content for Rochester's transition to online 
+                                        classes due to COVID-19. Developed software to facilitate this transition
+                                        using Matlab and Python.
+                                      </p>
+                                  </div>
+                              </div>
+
                               <div class="timeline-box timeline-box-left">
                                   <span class="dot"></span>
               
                                   <div class="timeline-box-inner animate-right">
                                       <span class="arrow"></span>
               
-                                      <div class="date">09/2019 - Present</div>
+                                      <div class="date">09/2019 - 12/2019</div>
                                       <h3>PARSONS CORPORATION</h3>
                                       <h4>Software Engineer Intern</h4>
               
                                       <p>
-                                          Currently developing Python software to support the results of 
+                                          Developed Python software to support the results of 
                                           reverse-engineering and vulnerability research as part of
                                           an Agile software development team.
                                       </p>
