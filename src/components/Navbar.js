@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Brightness4Icon from '@material-ui/icons/Brightness4';
+
 class Navbar extends React.Component {
 
     render() {
@@ -40,8 +42,9 @@ class Navbar extends React.Component {
                                     </ul>
                                 </nav>
         
-                                {/* <button class="btn-mobile btn-mobile-nav">Menu</button>
-                                <button class="btn-sidebar btn-sidebar-open"><i class="rsicon rsicon-menu"></i></button> */}
+                                <button class="btn-sidebar-open" onClick={() => this.props.changeMode()}>
+                                    <Brightness4Icon style={{color: "rgba(255, 255, 255, 0.7)",}}/>
+                                </button>
                             </div>
                         </div>
                     </div>

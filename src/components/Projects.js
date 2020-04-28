@@ -3,6 +3,8 @@ import React from 'react';
 
 class Projects extends React.Component {
 
+
+
     render() {
         return (
             <section id="portfolio" class="section section-portfolio">
@@ -100,7 +102,7 @@ class Projects extends React.Component {
                         <div class="grid-item size11 bridge">
                             <div class="grid-box">
                                 <figure class="portfolio-figure">
-                                    <img src="img/uploads/portfolio/portfolio-thumb-11-289x281.jpg" alt=""/>
+                                    <img src="img/screen_cap.png" alt=""/>
                                     <figcaption class="portfolio-caption">
                                         <div class="portfolio-caption-inner">
                                             <h3 class="portfolio-title">Personal Website</h3>
@@ -109,15 +111,16 @@ class Projects extends React.Component {
                                             <div class="btn-group">
                                                 <a class="btn-link" href="https://cclarke-magrab.me" target="_blank"><i
                                                         class="rsicon rsicon-link"></i></a>
-                                                <a class="portfolioFancybox btn-zoom" data-fancybox-group="portfolioFancybox2"
-                                                    href="#portfolio2-inline1"><i class="rsicon rsicon-eye"></i></a>
+                                                <a class="portfolioFancybox btn-zoom" data-fancybox-group="portfolioFancybox3"
+                                                    href="#portfolio3-inline1"><i class="rsicon rsicon-eye"></i></a>
                                             </div>
                                         </div>
                                     </figcaption>
                                 </figure>
                     
                                 {/* <!-- Start: Portfolio Inline Boxes --> */}
-                                <div id="portfolio2-inline1" class="fancybox-inline-box">
+                                <div id="portfolio3-inline1" class="fancybox-inline-box">
+                                    <div class="inline-embed" data-embed-type="image" data-embed-url="img/screen_cap.png"></div>
                                     <div class="inline-cont">
                                         <h2 class="inline-title">Personal Website</h2>
                     
