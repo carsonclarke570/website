@@ -1,5 +1,11 @@
 import React from 'react';
 
+import SpeedDial from '@material-ui/lab/SpeedDial';
+import SpeedDialIcon from '@material-ui/lab/SpeedDialIcon';
+import SpeedDialAction from '@material-ui/lab/SpeedDialAction';
+import { makeStyles } from '@material-ui/core/styles';
+
+import Experience from './components/Experience';
 import Navbar from './components/Navbar';
 import Profile from './components/Profile';
 import Projects from './components/Projects';
@@ -10,6 +16,60 @@ const COLOR_MAP = {
     CYAN: ["cyan.css", "07aaf5"],
     ORANGE: ["orange.css", "ff9801"],
     PALE_CYAN: ["pale-cyan.css", "83d5fb"]
+};
+
+const rootStyle = makeStyles((theme) => ({
+    transform: 'none'
+}));
+
+const speedDialStyle = makeStyles((theme) => ({
+    zIndex: 10,
+    position: 'fixed',
+    left: theme.spacing(2),
+    bottom: theme.spacing(2),
+}));
+
+class ColorWheel extends React.Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            color: COLOR_MAP.PALE_CYAN,
+            open: false
+        };
+
+        this.handleOpen = this.handleOpen.bind(this);
+        this.handleClosed = this.handleClosed.bind(this);
+    }
+
+    handleOpen() {
+        this.setState({ open: true });
+    }
+
+    handleClosed() {
+        this.setState({ open: false });
+    }
+    
+    render() {
+        return (
+            <div className={rootStyle}>
+                <SpeedDial
+                    ariaLabel="Color Wheel"
+                    class="btn-color"
+                    // className={speedDialStyle}
+                    icon={<SpeedDialIcon/>}
+                    onClose={this.handleClosed}
+                    onOpen={this.handleOpen}
+                    open={this.open}
+                    direction="right"
+                >
+
+                </SpeedDial>
+            </div>  
+        );
+    }
+
 };
 
 class App extends React.Component {
@@ -53,121 +113,22 @@ class App extends React.Component {
         return (
             <div>
                 <link rel="stylesheet" type="text/css" href={css_color}></link>
-                
-                <Sidebar />
+            
                 <div class="wrapper">
                     <header class="header">
                         <div class="head-bg" style={{"background-image": "url('img/uploads/rs-cover.jpg')"}}></div>
                         <Navbar changeMode={this.changeMode}/>
                     </header>
-                    {/* <!-- .header --> */}
+
                     
                     <div class="content">
                         <div class="container">
                             <Profile />
                             <Skills />
                             <Projects />
+                            <Experience />
                     
-                    <section id="experience" class="section section-experience">
-                        <div class="animate-up">
-                            <h2 class="section-title">Work Experience</h2>
                     
-                            <div class="timeline">
-                                <div class="timeline-bar"></div>
-                                <div class="timeline-inner clearfix">
-                                        <div class="timeline-box timeline-box-left">
-                                        <span class="dot"></span>
-                    
-                                        <div class="timeline-box-inner animate-right">
-                                            <span class="arrow"></span>
-                    
-                                            <div class="date">06/2020 - Present</div>
-                                            <h3>AMAZON</h3>
-                                            <h4>Software Development Engineer Intern</h4>
-                    
-                                            <p>
-                                                Beginning work on 06/01/2020.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="timeline-box timeline-box-right">
-                                        <span class="dot"></span>
-                    
-                                        <div class="timeline-box-inner animate-left">
-                                            <span class="arrow"></span>
-                    
-                                            <div class="date">01/2020 - 05/2020</div>
-                                            <h3>ROCHESTER INSITUTE OF TECHNOLOGY</h3>
-                                            <h4>Teaching Assistant</h4>
-                    
-                                            <p>
-                                                Responsible for faciliatating laboratory experiments for Interface 
-                                                and Digital Electronics, an upper-level embedded systems course. 
-                                                Reorganized the laboratory content for Rochester's transition to online 
-                                                classes due to COVID-19. Developed software to facilitate this transition
-                                                using Matlab and Python. Received the department's TA Teaching Award for 
-                                                my work. 
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="timeline-box timeline-box-left">
-                                        <span class="dot"></span>
-                    
-                                        <div class="timeline-box-inner animate-right">
-                                            <span class="arrow"></span>
-                    
-                                            <div class="date">09/2019 - 12/2019</div>
-                                            <h3>PARSONS CORPORATION</h3>
-                                            <h4>Software Engineer Intern</h4>
-                    
-                                            <p>
-                                                Worked as contractor for government organizations on mission 
-                                                critical software. Developed Python software to support the results of 
-                                                reverse-engineering and vulnerability research as part of
-                                                an Agile software development team.
-                                            </p>
-                                        </div>
-                                    </div>
-                    
-                                    <div class="timeline-box timeline-box-right">
-                                        <span class="dot"></span>
-                    
-                                        <div class="timeline-box-inner animate-left">
-                                            <span class="arrow"></span>
-                    
-                                            <div class="date">06/2019 - 08/2019</div>
-                                            <h3>COGO LABS</h3>
-                                            <h4>Platform Engineer Intern</h4>
-                    
-                                            <p>
-                                                Responsible for developing and maintaining various Docker and Kubernetes-based 
-                                                distributed systems as well as implementing backend API features in Golang.
-                                            </p>
-                                        </div>
-                                    </div>
-                    
-                                    <div class="timeline-box timeline-box-left">
-                                        <span class="dot"></span>
-                    
-                                        <div class="timeline-box-inner animate-right">
-                                            <span class="arrow"></span>
-                    
-                                            <div class="date">06/2018 - 12/2018</div>
-                                            <h3>PARSONS CORPORATION</h3>
-                                            <h4>Computer Engineer Intern</h4>
-                    
-                                            <p>
-                                                Researched network functionality and metadata extraction capabilities. Contributed 
-                                                to the team codebase in Golang and Python.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
                     {/* <!-- #experience --> */}
                     
                     <section id="education" class="section section-education">
@@ -325,7 +286,8 @@ class App extends React.Component {
                                 <p>
                                     I spend a fair amount of my free time playing guitar and listening to music. I served as 
                                     as secretary to both the RIT Jam Club and Student Music Association, two on-campus music clubs, 
-                                    and helped organize and plan various events and shows. 
+                                    and helped organize and plan various events and shows. Academically and personally, I find enjoyment in teaching
+                                    and collaborating with my peers.
                                 </p>
                     
                                 <ul class="interests-list">
@@ -469,6 +431,7 @@ class App extends React.Component {
             </div>
             {/* <!-- .wrapper --> */}
             
+            <ColorWheel />
             <a class="btn-scroll-top" href="#"><i class="rsicon rsicon-arrow-up"></i></a>
             
             <div id="overlay"></div>
