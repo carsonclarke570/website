@@ -2347,6 +2347,18 @@ body {
     text-align: center;
 }
 
+.sidebar {
+    margin: 15px 15px;
+}
+
+.sidebar .sidebar-txt {
+    color: #3d4451;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 600;
+    text-align: center;
+}
+
 .grid-box,
 .post-box,
 .price-box,
@@ -2735,13 +2747,16 @@ body {
     cursor: pointer;
     text-align: center;
     background: transparent;
-    border: 1px solid #d1d1d1;
     -webkit-border-radius: 1px;
     -moz-border-radius: 1px;
     border-radius: 1px;
     -webkit-transition: all 50ms liner;
     -moz-transition: all 50ms liner;
     transition: all 50ms liner;
+}
+
+.nav-wrap .btn-sidebar-open:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
 }
 
 .nav-wrap .btn-sidebar-open {

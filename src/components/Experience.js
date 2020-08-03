@@ -22,7 +22,8 @@ class Experience extends React.Component {
                                     <h4>Software Development Engineer Intern</h4>
             
                                     <p>
-                                        Beginning work on 06/01/2020.
+                                        <li>Worked as part of the Amazon Redshift team under AWS</li>
+                                        <li>Responsible for a project in augmenting and improving Redshift's ingestion capabilities</li>
                                     </p>
                                 </div>
                             </div>

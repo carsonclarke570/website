@@ -117,7 +117,7 @@ class App extends React.Component {
                 <div class="wrapper">
                     <header class="header">
                         <div class="head-bg" style={{"background-image": "url('img/uploads/rs-cover.jpg')"}}></div>
-                        <Navbar changeMode={this.changeMode}/>
+                        <Navbar changeMode={this.changeMode} themeColor={this.state.color}/>
                     </header>
 
                     
